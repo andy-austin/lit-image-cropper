@@ -33,7 +33,7 @@ Then, you can use the component in your HTML as follows:
 
 ```html
 
-<lit-image-cropper src="path/to/image.png" @image-cropped=${(data: string)=> {}}></lit-image-cropper>
+<lit-image-cropper src="path/to/image.png"></lit-image-cropper>
 ```
 
 This will render an image cropper component with the specified image.
