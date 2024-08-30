@@ -2,6 +2,8 @@ import { LitElement, html, PropertyValues } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { LitImageCropperStyles } from '../styles/cropper';
 
+import './slider';
+
 @customElement('lit-image-cropper')
 export class LitImageCropper extends LitElement {
   @property({ type: String }) src!: string;
@@ -198,6 +200,15 @@ export class LitImageCropper extends LitElement {
     this.dispatchEvent(new CustomEvent('on-image-cropped', { detail: canvas.toDataURL('image/png') }));
   };
 
+  private _onZoom = (event: CustomEvent) => {
+    const context = this._canvas.getContext('2d');
+    if (!context) return;
+
+    this._scale = event.detail;
+    this._draw(context);
+    this._crop();
+  };
+
   render() {
     return html`
       <canvas
@@ -211,6 +222,7 @@ export class LitImageCropper extends LitElement {
         @touchcancel=${this._onStopDragging}
       >
       </canvas>
+      <lit-image-cropper-slider .scale=${this._scale} @on-slide-end=${this._onZoom}></lit-image-cropper-slider>
     `;
   }
 }
