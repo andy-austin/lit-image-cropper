@@ -34,5 +34,11 @@
     "build": "yarn run eslint && npm run prettier && tsc",
     "eslint": "eslint 'src/**/*.{ts,js}'",
     "prettier": "prettier --write 'src/**/*.{ts,js,html,css}'"
-  }
+  },
+  "keywords": [
+    "web components",
+    "lit",
+    "lit-element",
+    "image-cropper"
+  ]
 }
