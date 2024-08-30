@@ -132,3 +132,4 @@ package-lock.json
 
 # JetBrains IDE project files
 .idea
+.vercel
