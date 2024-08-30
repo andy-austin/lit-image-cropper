@@ -1,0 +1,22 @@
+{
+  "name": "lit-image-cropper",
+  "version": "1.0.0",
+  "description": "Fast and easy image cropping web component built with Lit",
+  "repository": "git@github.com:andy-austin/lit-image-cropper.git",
+  "author": "Andy Fernandez <afgarabote@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.5.1",
+    "lit": "^3.2.0",
+    "typescript": "^5.5.4",
+    "ts-lit-plugin": "^2.0.2"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}
