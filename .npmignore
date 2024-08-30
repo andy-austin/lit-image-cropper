@@ -1,9 +1,12 @@
 node_modules/
 src/
+demo/
 
 .gitignore
 .prettierrc
+
 eslint.config.mjs
 package-lock.json
 tsconfig.json
 yarn.lock
+index.html

@@ -10,6 +10,9 @@
   "files": [
     "dist"
   ],
+  "dependencies": {
+    "lit": "^3.2.0"
+  },
   "devDependencies": {
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^8.39.0",
@@ -23,9 +26,11 @@
     "lit": "^3.2.0",
     "prettier": "^3.3.3",
     "ts-lit-plugin": "^2.0.2",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2"
   },
   "scripts": {
+    "dev": "vite",
     "build": "yarn run eslint && npm run prettier && tsc",
     "eslint": "eslint 'src/**/*.{ts,js}'",
     "prettier": "prettier --write 'src/**/*.{ts,js,html,css}'"
