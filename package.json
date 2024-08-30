@@ -11,12 +11,23 @@
     "dist"
   ],
   "devDependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^8.39.0",
     "@types/node": "^22.5.1",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-lit": "^1.14.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "lit": "^3.2.0",
-    "typescript": "^5.5.4",
-    "ts-lit-plugin": "^2.0.2"
+    "prettier": "^3.3.3",
+    "ts-lit-plugin": "^2.0.2",
+    "typescript": "^5.5.4"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "yarn run eslint && npm run prettier && tsc",
+    "eslint": "eslint 'src/**/*.{ts,js}'",
+    "prettier": "prettier --write 'src/**/*.{ts,js,html,css}'"
   }
 }

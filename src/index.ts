@@ -1,1 +1,1 @@
-export {SimpleGreeting} from './components/cropper';
+export { SimpleGreeting } from './components/cropper';
