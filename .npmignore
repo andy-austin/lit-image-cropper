@@ -1,0 +1,9 @@
+node_modules/
+src/
+
+.gitignore
+.prettierrc
+eslint.config.mjs
+package-lock.json
+tsconfig.json
+yarn.lock
