@@ -5,8 +5,6 @@ yet powerful solution for integrating image cropping functionality into your web
 
 [**Live Demo**](https://lit-image-cropper.vercel.app/)
 
-<iframe src="https://lit-image-cropper.vercel.app/" style="width: 100%; height: 500px; border: none;"></iframe>
-
 ## Features
 
 - **Easy to Use**: Simple API with minimal setup.
