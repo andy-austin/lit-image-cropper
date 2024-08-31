@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit';
+import { LitElement, html, PropertyValues } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { LitImageCropperSliderStyles } from '../styles/slider';
 
@@ -9,6 +9,11 @@ export class LitImageCropperSlider extends LitElement {
   @query('input[type="range"]') slider!: HTMLInputElement;
 
   static styles = [LitImageCropperSliderStyles];
+
+  protected updated(_changedProperties: PropertyValues) {
+    super.updated(_changedProperties);
+    this._update();
+  }
 
   private _update = () => {
     const value =
@@ -32,7 +37,7 @@ export class LitImageCropperSlider extends LitElement {
   };
 
   render() {
-    return html` <div>
+    return html` <div class="container">
       <span @click=${() => this._onClick(this.scale - 0.2)}> - </span>
       <input type="range" min="0.5" max="3" step="0.01" value="${this.scale}" @input=${this._onChange} />
       <span @click=${() => this._onClick(this.scale + 0.2)}> + </span>
