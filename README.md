@@ -3,7 +3,9 @@
 Lightweight and efficient web component for cropping images. Built with [Lit](https://lit.dev/), it provides a simple
 yet powerful solution for integrating image cropping functionality into your web applications.
 
-<a href="https://lit-image-cropper.vercel.app/" target="_blank">**Live Demo**</a>
+[**Live Demo**](https://lit-image-cropper.vercel.app/)
+
+<iframe src="https://lit-image-cropper.vercel.app/" style="width: 100%; height: 500px; border: none;"></iframe>
 
 ## Features
 
