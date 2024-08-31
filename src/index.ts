@@ -29,6 +29,10 @@ export class RootComponent extends LitElement {
           src=${DEMO_IMAGE_URL}
           @on-image-cropped=${(e: CustomEvent) => (this._croppedImage = e.detail)}
         ></lit-image-cropper>
+
+        <a href="https://github.com/andy-austin/lit-image-cropper/tree/master/demo" target="_blank">
+          see code on github
+        </a>
       </section>
     </div>`;
   }
