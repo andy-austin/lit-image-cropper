@@ -3,6 +3,8 @@
 Lightweight and efficient web component for cropping images. Built with [Lit](https://lit.dev/), it provides a simple
 yet powerful solution for integrating image cropping functionality into your web applications.
 
+[**Live Demo**](https://lit-image-cropper.vercel.app/)
+
 ## Features
 
 - **Easy to Use**: Simple API with minimal setup.
@@ -32,7 +34,6 @@ import 'lit-image-cropper';
 Then, you can use the component in your HTML as follows:
 
 ```html
-
 <lit-image-cropper src="path/to/image.png"></lit-image-cropper>
 ```
 
@@ -43,7 +44,7 @@ This will render an image cropper component with the specified image.
 The `lit-image-cropper` component supports the following attributes to provide additional flexibility:
 
 | Name  | Type   | Description                                         | Default |
-|-------|--------|-----------------------------------------------------|---------|
+| ----- | ------ | --------------------------------------------------- | ------- |
 | `src` | String | Path to the image that will be loaded for cropping. |         |
 
 ## Events
@@ -51,7 +52,7 @@ The `lit-image-cropper` component supports the following attributes to provide a
 The component emits several custom events that you can listen to for more control:
 
 | Event Name      | Description                                                                |
-|-----------------|----------------------------------------------------------------------------|
+| --------------- | -------------------------------------------------------------------------- |
 | `image-cropped` | Fired after the image has been cropped, containing the cropped image data. |
 
 ## Contributing
@@ -72,12 +73,14 @@ repository and submit a pull request.
 To set up the development environment:
 
 1. Clone the repository:
+
    ```sh
    git clone git@github.com:andy-austin/lit-image-cropper.git
    cd lit-image-cropper
    ```
 
 2. Install dependencies:
+
    ```sh
    yarn install
    ```

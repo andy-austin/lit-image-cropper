@@ -88,5 +88,9 @@ export const RootComponentStyles = css`
     .sidebar p {
       display: block;
     }
+
+    .content lit-image-cropper {
+      width: 60%;
+    }
   }
 `;
