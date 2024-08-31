@@ -8,7 +8,6 @@ yet powerful solution for integrating image cropping functionality into your web
 ## Features
 
 - **Easy to Use**: Simple API with minimal setup.
-- **Highly Customizable**: Supports various attributes and events for flexible use.
 - **Responsive Design**: Automatically adjusts to different screen sizes.
 - **Performance Optimized**: Lightweight and fast, with minimal impact on page load times.
 - **Modern Technology**: Built with Lit, leveraging Web Components for wide compatibility.
@@ -34,7 +33,7 @@ import 'lit-image-cropper';
 Then, you can use the component in your HTML as follows:
 
 ```html
-<lit-image-cropper src="path/to/image.png"></lit-image-cropper>
+<lit-image-cropper src="path/to/image"></lit-image-cropper>
 ```
 
 This will render an image cropper component with the specified image.
@@ -51,9 +50,9 @@ The `lit-image-cropper` component supports the following attributes to provide a
 
 The component emits several custom events that you can listen to for more control:
 
-| Event Name      | Description                                                                |
-| --------------- | -------------------------------------------------------------------------- |
-| `image-cropped` | Fired after the image has been cropped, containing the cropped image data. |
+| Event Name          | Description                                                                |
+| ------------------- | -------------------------------------------------------------------------- |
+| `@on-image-cropped` | Fired after the image has been cropped, containing the cropped image data. |
 
 ## Contributing
 

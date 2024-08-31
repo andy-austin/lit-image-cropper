@@ -1,6 +1,6 @@
 {
   "name": "lit-image-cropper",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Fast and easy image cropping web component built with Lit",
   "repository": "git@github.com:andy-austin/lit-image-cropper.git",
   "author": "Andy Fernandez <afgarabote@gmail.com>",
