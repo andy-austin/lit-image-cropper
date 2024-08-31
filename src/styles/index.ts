@@ -6,6 +6,16 @@ export const RootComponentStyles = css`
     justify-content: center;
   }
 
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bmc {
+    height: 30px !important;
+    width: 90px !important;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -14,6 +24,32 @@ export const RootComponentStyles = css`
     padding: 20px;
     width: 100%;
     gap: 20px;
+    box-sizing: border-box;
+  }
+
+  .container.no-border {
+    margin-bottom: 20px;
+    border: 1px solid #f0f0f0;
+    background-color: #f0f0f0;
+    position: relative;
+  }
+
+  .container.no-border a {
+    position: absolute;
+    right: 20px;
+  }
+
+  .container.no-border h1 {
+    font-weight: 400;
+    font-size: 25px;
+    margin: 0;
+    line-height: 1.25;
+  }
+
+  .container.no-border p {
+    margin: 0;
+    font-size: 14px;
+    color: #999999;
   }
 
   .content {
@@ -30,7 +66,7 @@ export const RootComponentStyles = css`
   }
 
   .content span {
-    margin: 10px 50px 20px;
+    margin: 10px 10px 20px;
     font-size: 14px;
     color: #999999;
     text-align: center;
@@ -71,10 +107,32 @@ export const RootComponentStyles = css`
     display: none;
   }
 
+  .source-logos {
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+  }
+
   @media only screen and (min-width: 768px) {
-    .container {
+    .wrapper {
       width: 80%;
+    }
+
+    .container.no-border {
+      flex-direction: column;
+    }
+
+    .container.no-border h1 {
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .container {
       flex-direction: row;
+    }
+
+    .content span {
+      margin: 10px 50px 20px;
     }
 
     .sidebar {
