@@ -1,5 +1,6 @@
 import { LitElement, html } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
+import { inject } from '@vercel/analytics';
 
 import './components/cropper';
 import { RootComponentStyles } from './styles';
@@ -17,6 +18,11 @@ export class RootComponent extends LitElement {
   @state() private _croppedImage = '';
 
   static styles = [RootComponentStyles];
+
+  connectedCallback() {
+    super.connectedCallback();
+    inject();
+  }
 
   render() {
     return html`<div class="wrapper">
