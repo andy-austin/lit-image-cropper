@@ -1,6 +1,7 @@
 import { LitElement, html } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import { inject } from '@vercel/analytics';
+import { injectSpeedInsights } from '@vercel/speed-insights';
 
 import './components/cropper';
 import { RootComponentStyles } from './styles';
@@ -22,6 +23,7 @@ export class RootComponent extends LitElement {
   connectedCallback() {
     super.connectedCallback();
     inject();
+    injectSpeedInsights();
   }
 
   render() {
