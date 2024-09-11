@@ -1,4 +1,6 @@
-# \<lit-image-cropper\> [![Mentioned in Awesome Lit](https://awesome.re/mentioned-badge.svg)](https://github.com/web-padawan/awesome-lit)
+# \<lit-image-cropper\> 
+
+[![Mentioned in Awesome Lit](https://awesome.re/mentioned-badge.svg)](https://github.com/web-padawan/awesome-lit)
 
 Lightweight and efficient web component for cropping images. Built with [Lit](https://lit.dev/), it provides a simple
 yet powerful solution for integrating image cropping functionality into your web applications.
