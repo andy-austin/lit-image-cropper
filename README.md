@@ -1,5 +1,6 @@
 # \<lit-image-cropper\> 
 
+[![Published on npm](https://img.shields.io/npm/v/lit-image-cropper.svg?logo=npm)](https://www.npmjs.com/package/lit-image-cropper)
 [![Mentioned in Awesome Lit](https://awesome.re/mentioned-badge.svg)](https://github.com/web-padawan/awesome-lit)
 
 Lightweight and efficient web component for cropping images. Built with [Lit](https://lit.dev/), it provides a simple
